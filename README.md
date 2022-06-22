@@ -29,7 +29,7 @@ Em geral, determina-se um nível de confiança $(1 - \alpha)$, que representa a 
 
 Se o desvio padrão populacional $\sigma$ for conhecido, o intervalo de confiança para a média obtida de uma amostragem com $n$ elementos é dado por:
 
-$   \mu_s \pm z_{\alpha} \frac{\sigma}{\sqrt{n}} $
+$   \mu_s \pm z_{1 - \alpha} \frac{\sigma}{\sqrt{n}} $
 
 onde $z_{1 -\alpha}$ (ou z-score) é o valor que determina o quantil $1 - \alpha$ da distribuição Gaussiana padrão. 
 
@@ -54,3 +54,21 @@ Além disso, observa-se que o desvio padrão decresce com n.
 Quando a variância populacional não é conhecida o intervalo de confiança para a estimativa de uma média pode ser calculado utilizando a distribuição t-Student.
 
 A distribuiçãp t-Student depende de um único parâmetro que são os graus de liberdade. Abaixo, essa distribuição é exibida para diferentes graus de liberdade. 
+
+![t_student](https://user-images.githubusercontent.com/88217999/175102635-6d032f9e-6dcc-410f-ae4a-5d5ed05dadd2.png)
+
+A distribuição t-Student possuí uma calda mais longa do que a normal. 
+
+Conforme os graus de liberdade aumentam a distribuição se aproxima da normal.
+
+O intervalo de confiança utilizando-se a distribuição t-Student é dado por:
+
+$$
+    \mu_s \pm t \frac{\sigma_s}{\sqrt{n}},
+$$
+
+onde agora $\sigma_s$ é o desvio padrão da amostra e $t$ é o valor correspondente ao quantil do nível de confiança desejado na distribuição t com n-1 graus de liberdade.  
+
+Novamente tomando uma amostra com $n = 30$ o intervalo de confiança para a altura média obtido pela estatística t é:
+
+$(1.67 \pm 0.62)$m. 
