@@ -121,10 +121,29 @@ Visualizando no gráfico, temos:
 
 O z-score está indicado pela linha tracejada vertical. Nesse caso o z-score está bastante distante dos valores críticos do teste.
 
-Um outro parâmetro importante no teste é o valor p (p-value). Ele indica a probabilidade de se estar errado ao rejeitar a hipótese nula (também chamado de erro do tipo I). Ele é calculado como: $\{$
+Um outro parâmetro importante no teste é o valor p (p-value). Ele indica a probabilidade de se estar errado ao rejeitar a hipótese nula (também chamado de erro do tipo I). Ele é calculado como: 
+
+![p-value](https://user-images.githubusercontent.com/88217999/175112146-f5c24892-1dae-4742-b5bc-c6a08ec1d705.png)
+
+No exemplo acima temos p-value = 0.8767.
+
+Ou seja, ao rejeitar a hipóteste nula tem-se 87% de chances de se estar errado. Esse valor está bem acima da significância pré-determinada e, portanto, a hipótese nula não pode ser rejeitada.
+
+### Teste t para diferença de médias de duas amostras independentes
+
+Esse primeiro teste será realizado nos dados sobre as alturas na população e a hipótese nula é a de que a altura média das mulheres é menor do que a dos homens, $\mu_\text{wom} < \mu_\text{men}$.
+
+O teste é assim definido por:
 
 $$
-     \text{p-value} = 1 - \text{Prob}\{- z_\text{score} < z < z_\text{score}\} = \text{Prob}\{z > |z_\text{score}|\}.
+    H_0: \mu_\text{wom} = \mu_\text{men}
+$$
+$$
+    H_1: \mu_\text{wom} < \mu_\text{men}
 $$
 
-No exemplo acima temos o seguinte valor p:
+Esse é um teste unilateral.
+
+A média de altura dos homens é de 1.75 m  e a das mulheres é 1.62 m.
+
+Na figura abaixo as distribuições de alturas de homens e mulheres são mostradas: 
