@@ -43,3 +43,14 @@ Conforme visto acima, a distribuição de alturas já é aparentemente simétric
 
 Nos gráficos a seguir, observa-se como a distribuição das médias de amostras varia conforme o número de elementos tomados em cada amostra cresce. 
 
+![teor_lim_central](https://user-images.githubusercontent.com/88217999/175101898-8f0c4a59-9004-4059-befe-4b0304ef2ea2.png)
+
+O teorema do limite central garante que conforme n aumenta a distribuição das médias das amostras se torna mais próxima de uma normal.
+
+Além disso, observa-se que o desvio padrão decresce com n.
+
+## Intervalos de confiança com a estatística t-Student
+
+Quando a variância populacional não é conhecida o intervalo de confiança para a estimativa de uma média pode ser calculado utilizando a distribuição t-Student.
+
+A distribuiçãp t-Student depende de um único parâmetro que são os graus de liberdade. Abaixo, essa distribuição é exibida para diferentes graus de liberdade. 
