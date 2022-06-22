@@ -244,4 +244,8 @@ A seguir, o teste será extendido para considerar indivíduos obesos ou com sobr
 
 A matriz de contingência nesse caso é dada por
 
+![overweight](https://user-images.githubusercontent.com/88217999/175179187-3d5d6370-42be-412f-9e1d-150100527759.png)
 
+Após construir a matriz esperada obtem-se $\chi^2_\text{calc} = 5642.7015$.
+
+Novamente, pode-se então afirmar que o sobrepeso está fortemente relacionado ao sexo.
