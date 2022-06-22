@@ -203,3 +203,35 @@ Os dados apresentam uma categoria de sobrepeso ('Overweight') e outra categoria 
 
 Para realizar o teste montou-se a seguinte matriz de contingência.
 
+![obesity](https://user-images.githubusercontent.com/88217999/175175290-5268768a-35f8-43cb-bbf9-4b5e0cc83924.png)
+
+Essa matriz contém as frequências observadas e precisa-se agora montar a matriz "esperada", com elementos $E_{ij}$.
+
+A matriz esperada é construída de tal forma que a incidência de obesidade nos sexos reflita a frequência na população. 
+
+Tem-se:
+
+$$
+    E_{ij} = \frac{n_i n_j}{n}
+$$
+
+onde $n_i$ é o número de elementos na linha $i$ e $n_j$ é o número de elementos na coluna $j$. $n$ é a quantidade total de observações.
+
+O teste $\chi^2$ é realizado computando a distância entre as matrizes observada e esperada através da expressão:
+
+$$
+    \chi^2_\text{calculado} = \sum_{i = 1}^2 \sum_{j = 1}^2 \frac{(O_{ij} - E_{ij})^2}{E_{ij}}.
+$$
+
+A hipótese nula é então rejeitada se $\chi^2_\text{calculado}$ encontra-se na região de rejeição da distribuição 
+$\chi^2$ com d graus de liberdade, onde d =(n. linhas - 1).(n. colunas - 1). Nesse caso d = (2 -1)(2 -1) = 1.
+
+Realizando os cálculos obtém-se $t_\text{calc} = 22565.42$ para o teste.
+
+O valor crítico para uma significância $\alpha = 0.05$ é 
+$\chi^2_{crítico} = 3.84.$ 
+
+Como $\chi^2_{calc} = 22565.42$, tem-se 
+$\chi^2_{calc} > \chi^2_{crítico}$ e a hipótese nula é rejeitada. Concluí-se então que existe uma relação entre obesidade e sexo.
+
+Abaixo, a distribuição $\chi^2$ com 1 grau de liberdade é ilustrada e a região de rejeição indicada.  
