@@ -104,3 +104,15 @@ $$
 onde $\sigma$ é o desvio padrão na população. 
 
 Uma vez determinado o nível de confiança (ou significância), a hipótese nula é rejeitada se o valor de z-score encontra-se na região de rejeição da distribuição z. Para um nível de confiança de 95%, que equivale a uma significância de 5%, a região de rejeição encontra-se nos valores de z da distribuição normal padrão que estão fora do percentil 95%, ou seja, para $z > 1.96$ ou $z < -1.96.$     
+
+![hipotese_z](https://user-images.githubusercontent.com/88217999/175110168-d7055f54-b0b7-4d20-bf0c-1dfaf04c68df.png)
+
+Na figura acima, a região em vermelho é a região de rejeição da hipótese nula. Para uma significância de 5% ($\alpha = 0.05$) a hipótese nula é rejeitada se $|\text{z-score}| > 1.96$.
+
+De maneira informal, a significância indica o valor aceitável para a probabilidade de se estar errado ao rejeitar a hipótese nula.
+
+Para uma amostra com n=50 obtem-se $z_\text{score} = -0.1551$.
+
+Como $\text{|z-score|} < z_\text{crítico} = 1.96$ a hipótese nula não pode ser rejeitada.
+
+Visualizando no gráfico, temos:
