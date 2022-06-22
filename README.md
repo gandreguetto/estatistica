@@ -235,3 +235,13 @@ Como $\chi^2_{calc} = 22565.42$, tem-se
 $\chi^2_{calc} > \chi^2_{crítico}$ e a hipótese nula é rejeitada. Concluí-se então que existe uma relação entre obesidade e sexo.
 
 Abaixo, a distribuição $\chi^2$ com 1 grau de liberdade é ilustrada e a região de rejeição indicada.  
+
+![qui_quadrado](https://user-images.githubusercontent.com/88217999/175178890-2ef33f30-9fd8-4471-8e6d-199a916299e8.png)
+
+O p-value é novamente praticamente nulo e o teste tem um alto grau de confiabilidade.
+
+A seguir, o teste será extendido para considerar indivíduos obesos ou com sobrepeso. Em ambos os casos o indivíduo será classificado como sobrepeso. 
+
+A matriz de contingência nesse caso é dada por
+
+
