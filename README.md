@@ -69,6 +69,38 @@ $$
 
 onde agora $\sigma_s$ é o desvio padrão da amostra e $t$ é o valor correspondente ao quantil do nível de confiança desejado na distribuição t com n-1 graus de liberdade.  
 
-Novamente tomando uma amostra com $n = 30$ o intervalo de confiança para a altura média obtido pela estatística t é:
+Novamente tomando uma amostra com $n = 30$, o intervalo de confiança para a altura média obtido pela estatística t é:
 
-$(1.67 \pm 0.62)$m. 
+$(1.67 \pm 0.62)$ m. 
+
+Nota-se que o comprimento do intervalo é bem maior do que o obtido anteriormente utilizando a distribuição z.
+
+## Testes de hipótese
+
+### Teste bi-caudal
+
+Neste primeiro exemplo é verificado se o valor da média obtida de uma amostra permite rejeitar um valor pré-determinado para a média de uma distribuição com desvio padrão conhecido.
+
+O peso médio e desvio padrão são respectivamente 73.23 Kg e 14.56 Kg.
+
+Considera-se a hipótese nula de que o peso médio da população é de 73.23 Kg, $\mu_w$ = 73.23 Kg. Escreve-se:
+
+$$
+    H_0: \mu_w = 73.23 Kg.
+$$
+
+A hipótese alternativa é a de que a média é diferente e será testado se o valor da média obtido de uma amostra de n elementos, $\mu_s$, permite rejeitar $H_0$. Assim:
+
+$$
+    H_1: \mu_s \neq \mu_w.
+$$
+
+O teste é realizado calculando-se o z-score:
+
+$$
+     \text{z-score} = \frac{(\mu_s - \mu_w)}{\frac{\sigma}{\sqrt{n}}},
+$$
+
+onde $\sigma$ é o desvio padrão na população. 
+
+Uma vez determinado o nível de confiança (ou significância), a hipótese nula é rejeitada se o valor de z-score encontra-se na região de rejeição da distribuição z. Para um nível de confiança de 95%, que equivale a uma significância de 5%, a região de rejeição encontra-se nos valores de z da distribuição normal padrão que estão fora do percentil 95%, ou seja, para $z > 1.96$ ou $z < -1.96.$     
