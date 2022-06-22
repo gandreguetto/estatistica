@@ -116,3 +116,15 @@ Para uma amostra com n=50 obtem-se $z_\text{score} = -0.1551$.
 Como $\text{|z-score|} < z_\text{crítico} = 1.96$ a hipótese nula não pode ser rejeitada.
 
 Visualizando no gráfico, temos:
+
+![hipotese_z_2](https://user-images.githubusercontent.com/88217999/175110981-3640f5fc-c8af-4c5a-a409-71e68590b32e.png)
+
+O z-score está indicado pela linha tracejada vertical. Nesse caso o z-score está bastante distante dos valores críticos do teste.
+
+Um outro parâmetro importante no teste é o valor p (p-value). Ele indica a probabilidade de se estar errado ao rejeitar a hipótese nula (também chamado de erro do tipo I). Ele é calculado como: $\{$
+
+$$
+     \text{p-value} = 1 - \text{Prob}\{- z_\text{score} < z < z_\text{score}\} = \text{Prob}\{z > |z_\text{score}|\}.
+$$
+
+No exemplo acima temos o seguinte valor p:
