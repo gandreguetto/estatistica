@@ -170,4 +170,16 @@ Nesse teste unilateral a hipótese nula é rejeitada se $t_\text{calc} < t_\text
 
 Tem-se nesse caso $t_\text{calc} = -95.60$ e Graus de lib. = 9962.08.
 
+Aqui, $t_\text{crítico} = -1.64$.
+
+Como tem-se um teste unilateral à esquerda, $t_\text{crítico}$ é obtido tal que 
+
+$\text{Prob}(-\infty < t < t_\text{crítico}) = 0.05$.
+
+Uma vez que $t_\text{calc} = -95.6$, tem-se $t_\text{calc} < t_\text{crítico}$ e a hipótese nula é rejeitada.
+
+Pode-se afirmar, portanto, que a altura média das mulheres é menor do que a dos homens.
+
+Abaixo está ilustrada a distribuição t e a região de rejeição para o teste unilateral.
+
 
