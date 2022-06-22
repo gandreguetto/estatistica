@@ -147,3 +147,27 @@ Esse é um teste unilateral.
 A média de altura dos homens é de 1.75 m  e a das mulheres é 1.62 m.
 
 Na figura abaixo as distribuições de alturas de homens e mulheres são mostradas: 
+
+![homem_mulher](https://user-images.githubusercontent.com/88217999/175113896-97587b06-72c1-4382-b3ce-d86b917fe129.png)
+
+Nesse tipo de teste a estatística utilizada é baseada na distribuição t. 
+
+Calcula-se o valor $t_\text{calc}$ para o teste, que é dado por:
+
+$$
+    t_\text{calc} = \frac{(\mu_\text{wom} - \mu_\text{man})}{\sqrt{\frac{\sigma_\text{wom}^2}{n_\text{wom}} + \frac{\sigma_\text{men}^2}{n_\text{men}}}}
+$$
+
+e também os graus de liberdade:
+
+$$
+    \text{Graus de lib.} = \frac{(\sigma_\text{wom}^2/n_\text{wom} + \sigma_\text{men}^2/n_\text{men})^2}{\frac{(\sigma_\text{wom}^2/n_\text{wom})^2}{n_\text{wom} - 1} + \frac{(\sigma_\text{men}^2/n_\text{men})^2}{n_\text{men} - 1}}.
+$$
+
+De forma similar ao que foi feito anteriormente, deve-se então definir o nível de confiança desejado e identificar os valores críticos de $t$ correspondentes na distribuição t com esses graus de liberdade. 
+
+Nesse teste unilateral a hipótese nula é rejeitada se $t_\text{calc} < t_\text{crítico}.$
+
+Tem-se nesse caso $t_\text{calc} = -95.60$ e Graus de lib. = 9962.08.
+
+
