@@ -182,4 +182,24 @@ Pode-se afirmar, portanto, que a altura média das mulheres é menor do que a do
 
 Abaixo está ilustrada a distribuição t e a região de rejeição para o teste unilateral.
 
+![t_student_2](https://user-images.githubusercontent.com/88217999/175170675-c5601e88-91b4-4417-b0d9-c739322c39b1.png)
+
+O p-value nesse caso é muito próximo de zero e o resultado do teste, portanto, tem alto grau de confiança.
+
+## Teste Qui-Quadrado para independência entre variáveis categóricas
+
+A primeira hipótese testada foi se a obesidade está associada com algum dos sexos.
+
+Define-se assim as hipóteses:
+
+$$
+    H_0: \text{Não existe associação significativa entre ser obeso e ser do sexo masculino.}
+$$
+$$
+    H_1: \text{Existe associação significativa entre ser homem e ser obeso.}
+$$
+
+Os dados apresentam uma categoria de sobrepeso ('Overweight') e outra categoria de obeso ('Obesity'). Inicialmente o teste foi aplicado apenas aos classificados como obesos. 
+
+Para realizar o teste montou-se a seguinte matriz de contingência.
 
