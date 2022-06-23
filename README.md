@@ -33,7 +33,9 @@ $   \mu_s \pm z_{1 - \alpha} \frac{\sigma}{\sqrt{n}} $
 
 onde $z_{1 -\alpha}$ (ou z-score) é o valor que determina o quantil $1 - \alpha$ da distribuição Gaussiana padrão. 
 
-Tomando como exemplo a distribuição de alturas e coletando uma amostra de tamanho $n = 30$ obteve-se o seguinte intervalo para uma confiança de 95% na média das alturas: $1.68 m \pm 0.03 m$
+Tomando como exemplo a distribuição de alturas e coletando uma amostra de tamanho $n = 30$ obteve-se o seguinte intervalo para uma confiança de 95% na média das alturas: 
+
+$(1.68 \pm 0.03)$ m
 
 ## Teorema do limite central aplicado na distribuição de alturas
 
@@ -41,7 +43,7 @@ O teorema do limite central determina que, independentemente da distribuição d
 
 Conforme visto acima, a distribuição de alturas já é aparentemente simétrica e com distribuição próxima da normal. 
 
-Nos gráficos a seguir, observa-se como a distribuição das médias de amostras varia conforme o número de elementos tomados em cada amostra cresce. 
+Nos gráficos a abaixo, observa-se como a distribuição das médias de amostras varia conforme o número de elementos tomados em cada amostra cresce. 
 
 ![teor_lim_central](https://user-images.githubusercontent.com/88217999/175101898-8f0c4a59-9004-4059-befe-4b0304ef2ea2.png)
 
@@ -53,7 +55,7 @@ Além disso, observa-se que o desvio padrão decresce com n.
 
 Quando a variância populacional não é conhecida o intervalo de confiança para a estimativa de uma média pode ser calculado utilizando a distribuição t-Student.
 
-A distribuiçãp t-Student depende de um único parâmetro que são os graus de liberdade. Abaixo, essa distribuição é exibida para diferentes graus de liberdade. 
+A distribuição t-Student depende de um único parâmetro que são os graus de liberdade. Abaixo, a distribuição é exibida para diferentes graus de liberdade. 
 
 ![t_student](https://user-images.githubusercontent.com/88217999/175102635-6d032f9e-6dcc-410f-ae4a-5d5ed05dadd2.png)
 
@@ -123,21 +125,24 @@ O z-score está indicado pela linha tracejada vertical. Nesse caso o z-score est
 
 Um outro parâmetro importante no teste é o valor p (p-value). Ele indica a probabilidade de se estar errado ao rejeitar a hipótese nula (também chamado de erro do tipo I). Ele é calculado como: 
 
-![p-value](https://user-images.githubusercontent.com/88217999/175112146-f5c24892-1dae-4742-b5bc-c6a08ec1d705.png)
+$$
+     \text{p-value} = 1 - \text{Prob}(- z_\text{score} < z < z_\text{score}) = \text{Prob}(z > |z_\text{score}|).
+$$
 
 No exemplo acima temos p-value = 0.8767.
 
 Ou seja, ao rejeitar a hipóteste nula tem-se 87% de chances de se estar errado. Esse valor está bem acima da significância pré-determinada e, portanto, a hipótese nula não pode ser rejeitada.
 
-### Teste t para diferença de médias de duas amostras independentes
+### Teste t para a diferença de médias de duas amostras independentes
 
-Esse primeiro teste será realizado nos dados sobre as alturas na população e a hipótese nula é a de que a altura média das mulheres é menor do que a dos homens, $\mu_\text{wom} < \mu_\text{men}$.
+Esse teste será realizado nos dados sobre as alturas na população e a hipótese nula é a de que a altura média das mulheres é menor do que a dos homens, $\mu_\text{wom} < \mu_\text{men}$.
 
 O teste é assim definido por:
 
 $$
     H_0: \mu_\text{wom} = \mu_\text{men}
 $$
+
 $$
     H_1: \mu_\text{wom} < \mu_\text{men}
 $$
@@ -240,7 +245,7 @@ Abaixo, a distribuição $\chi^2$ com 1 grau de liberdade é ilustrada e a regi�
 
 O p-value é novamente praticamente nulo e o teste tem um alto grau de confiabilidade.
 
-A seguir, o teste será extendido para considerar indivíduos obesos ou com sobrepeso. Em ambos os casos o indivíduo será classificado como sobrepeso. 
+Em seguida, o teste é extendido para considerar indivíduos obesos ou com sobrepeso. Em ambos os casos o indivíduo será classificado como sobrepeso. 
 
 A matriz de contingência nesse caso é dada por
 
