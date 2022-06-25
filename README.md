@@ -123,15 +123,15 @@ Visualizando no gráfico, temos:
 
 O z-score está indicado pela linha tracejada vertical. Nesse caso o z-score está bastante distante dos valores críticos do teste.
 
-Um outro parâmetro importante no teste é o valor p (p-value). Ele indica a probabilidade de se estar errado ao rejeitar a hipótese nula (também chamado de erro do tipo I). Ele é calculado como: 
+Um outro parâmetro importante no teste é o valor p (p-value). Ele fornece a probabilidade da estatística de teste ser equivalente ou mais extrema àquela obtida dos dados dado que a hipótese nula seja verdadeira. Ele é calculado como: 
 
 $$
-     \text{p-value} = 1 - \text{Prob}(- z_\text{score} < z < z_\text{score}) = \text{Prob}(z > |z_\text{score}|).
+     \text{p-value} = 1 - \text{Prob}(- z_\text{score} < z < z_\text{score}) = 2 \text{Prob}(z > |z_\text{score}|).
 $$
 
-No exemplo acima temos p-value = 0.8767.
+No exemplo acima temos p-value = 0.8593.
 
-Ou seja, ao rejeitar a hipóteste nula tem-se 87% de chances de se estar errado. Esse valor está bem acima da significância pré-determinada e, portanto, a hipótese nula não pode ser rejeitada.
+Esse valor está bem acima da significância pré-determinada e, portanto, a hipótese nula não pode ser rejeitada.
 
 ### Teste t para a diferença de médias de duas amostras independentes
 
